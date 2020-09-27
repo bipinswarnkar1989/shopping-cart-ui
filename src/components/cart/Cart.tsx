@@ -98,7 +98,9 @@ export const Cart: React.FC = () => {
                 <button
                  disabled={item.quantity === 1}
                  onClick={() => handleDecrement(item.id)}
-                 className="circle_button">
+                 className="circle_button"
+                 data-testid="decrementBtn"
+                 >
                   – 
                 </button>
                 </div>
@@ -108,12 +110,15 @@ export const Cart: React.FC = () => {
                  value={item.quantity || ''}
                  onChange={e => handleQuantiyChange(e, item.id)}
                  onBlur={e => handleQuantiyBlur(e, item.id)}
+                 data-testid="quantity"
                   />
                 </div>
                 <div className="carcart__item__left__quantity_increment">
                 <button
                  onClick={() => handleIncrement(item.id)}
-                 className="circle_button">
+                 className="circle_button"
+                 data-testid="incrementBtn"
+                 >
                   + 
                 </button>
                 </div>
@@ -129,7 +134,13 @@ export const Cart: React.FC = () => {
                   <span>₹</span>{item.price}
                 </div>
                 <div className="cart__item__right__remove">
-                  <button onClick={() => handleRemove(item.id)} className="cart__item__right__remove_btn">Remove</button>
+                  <button 
+                  onClick={() => handleRemove(item.id)}
+                  className="cart__item__right__remove_btn"
+                  data-testid="removeBtn"
+                  >
+                  Remove
+                  </button>
                 </div>
                 </div>
               </div>
