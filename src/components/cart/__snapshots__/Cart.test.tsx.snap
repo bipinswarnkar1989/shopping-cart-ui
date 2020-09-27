@@ -38,6 +38,7 @@ exports[`<Cart /> should render as expected 1`] = `
           >
             <button
               class="circle_button"
+              data-testid="decrementBtn"
             >
               –
             </button>
@@ -46,6 +47,7 @@ exports[`<Cart /> should render as expected 1`] = `
             class="carcart__item__left__quantity_input"
           >
             <input
+              data-testid="quantity"
               type="text"
               value="2"
             />
@@ -55,6 +57,7 @@ exports[`<Cart /> should render as expected 1`] = `
           >
             <button
               class="circle_button"
+              data-testid="incrementBtn"
             >
               +
             </button>
@@ -82,6 +85,7 @@ exports[`<Cart /> should render as expected 1`] = `
         >
           <button
             class="cart__item__right__remove_btn"
+            data-testid="removeBtn"
           >
             Remove
           </button>
@@ -110,6 +114,7 @@ exports[`<Cart /> should render as expected 1`] = `
           >
             <button
               class="circle_button"
+              data-testid="decrementBtn"
               disabled=""
             >
               –
@@ -119,6 +124,7 @@ exports[`<Cart /> should render as expected 1`] = `
             class="carcart__item__left__quantity_input"
           >
             <input
+              data-testid="quantity"
               type="text"
               value="1"
             />
@@ -128,6 +134,7 @@ exports[`<Cart /> should render as expected 1`] = `
           >
             <button
               class="circle_button"
+              data-testid="incrementBtn"
             >
               +
             </button>
@@ -155,6 +162,7 @@ exports[`<Cart /> should render as expected 1`] = `
         >
           <button
             class="cart__item__right__remove_btn"
+            data-testid="removeBtn"
           >
             Remove
           </button>
